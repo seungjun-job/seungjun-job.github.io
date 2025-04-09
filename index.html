@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- 네이버 메타태그 (소유 확인용) -->
+  <!-- ✅ 네이버 소유확인 -->
   <meta name="naver-site-verification" content="848ef1d42a9f4ffaf588ed7ce06b5cfa8dadcc7b" />
 
-  <!-- 검색엔진 최적화 -->
+  <!-- ✅ 검색엔진 최적화 -->
   <meta name="description" content="서든어택 느낌의 간단SP 거래소, 카카오톡 1:1 오픈채팅으로 간편한 상담 진행!" />
   <meta name="keywords" content="간단sp, 서든어택, SP거래, 카카오톡상담, 오픈채팅, 1:1상담" />
   <meta name="robots" content="index, follow" />
@@ -15,6 +15,10 @@
   <title>간단SP 거래소</title>
 
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       font-family: 'Malgun Gothic', sans-serif;
@@ -68,6 +72,25 @@
       margin: 8px 0;
     }
 
+    .warning {
+      background-color: #330000;
+      color: #ff6666;
+      padding: 20px;
+      margin: 30px auto;
+      max-width: 600px;
+      border: 2px solid #ff4444;
+      border-radius: 10px;
+    }
+
+    .warning h3 {
+      color: #ff4444;
+      margin-bottom: 10px;
+    }
+
+    .warning p {
+      font-size: 1.05em;
+    }
+
     .chat-link {
       display: inline-block;
       margin-top: 30px;
@@ -95,6 +118,12 @@
 </head>
 <body>
 
+  <!-- ✅ 잔잔한 배경음악 -->
+  <audio autoplay loop>
+    <source src="https://cdn.pixabay.com/download/audio/2023/03/25/audio_6217749e89.mp3?filename=spring-lofi-14447.mp3" type="audio/mpeg">
+    브라우저가 오디오를 지원하지 않습니다.
+  </audio>
+
   <header>
     <h1>간단SP 거래소</h1>
   </header>
@@ -115,6 +144,11 @@
     <p style="margin-top: 10px; font-size: 0.9em; color: #bbb;">※ 실시간 시세는 상담을 통해 확인해주세요.</p>
   </section>
 
+  <section class="warning">
+    <h3>⚠️ 주의사항</h3>
+    <p>간단SP는 절대 먼저 연락하지 않습니다.<br /><strong>사칭 주의하세요!</strong></p>
+  </section>
+
   <a class="chat-link" href="https://open.kakao.com/o/s7Oc8aqh" target="_blank">카카오톡 1:1 상담 바로가기</a>
 
   <footer>
@@ -124,3 +158,4 @@
 
 </body>
 </html>
+
